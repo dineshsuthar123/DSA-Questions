@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Flip_Columns_For_Maximum_Number_of_Equal_Rows {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Sol12 solution = new Sol12();
 
         // Example input
         int[][] mat = {
@@ -13,13 +13,13 @@ public class Flip_Columns_For_Maximum_Number_of_Equal_Rows {
                 {0, 1, 0}
         };
 
-        int result = solution.maxEqualRowsAfterFlips(mat);
+        int result = Solution.maxEqualRowsAfterFlips(mat);
         System.out.println("Maximum Equal Rows After Flips: " + result);
     }
 }
 
 class Solution {
-    public int maxEqualRowsAfterFlips(int[][] matrix) {
+    public static int maxEqualRowsAfterFlips(int[][] matrix) {
         Map<String, Integer> freq = new HashMap<>();
 
         for(int []row : matrix){
