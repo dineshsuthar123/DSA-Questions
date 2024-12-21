@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Rotating_the_Box {
     public static void main(String[] args) {
-        Solution1 solution = new Solution1();
+        Solutionfirst solution = new Solutionfirst();
 
         // Example input
         char[][] box = {
@@ -13,7 +13,7 @@ public class Rotating_the_Box {
                 {'#', '#', '.', '#', '*'}
         };
 
-        char[][] result = solution.rotateTheBox(box);
+        char[][] result = Solution1.rotateTheBox(box);
 
         System.out.println("Rotated Box:");
         for (char[] row : result) {
@@ -23,7 +23,7 @@ public class Rotating_the_Box {
 }
 
 class Solution1 {
-    public char[][] rotateTheBox(char[][] box) {
+    public static char[][] rotateTheBox(char[][] box) {
         int ROWS = box.length;
         int COLS = box[0].length;
 
