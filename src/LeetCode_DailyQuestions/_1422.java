@@ -6,8 +6,8 @@ public class _1422 {
         String input = "011101"; // Example input
         int maxScore1 = solution.maxScore1(input);
         int maxScore2 = solution.maxScore2(input);
-        System.out.println("Maximum Score For The First Solution: " + maxScore1);
-        System.out.println("Maximum Score For The Second Solution: " + maxScore2);
+        System.out.println("Maximum score For The First Solution: " + maxScore1);
+        System.out.println("Maximum score For The Second Solution: " + maxScore2);
     }
 
     public int maxScore1(String s) {
